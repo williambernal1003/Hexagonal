@@ -27,4 +27,10 @@ public class TEST {
     @Getter
     @Setter
     private String Telefono;
+
+    @ManyToOne
+    @JoinColumn(name = "idTEST", referencedColumnName = "id")
+    @Getter
+    @Setter
+    private TESTV2 testv2;
 }
